@@ -5,5 +5,5 @@ export default function GoogleSignInButton() {
   const handleClick = () => {
     signIn("google")
   }
-  return <button onClick={handleClick}>LOGIN</button>
+  return <button name="google-signin" onClick={handleClick}>LOGIN</button>
 }
