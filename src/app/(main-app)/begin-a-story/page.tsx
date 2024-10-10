@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth"
 import StoryCreationForm from "@/components/StoryCreationForm/StoryCreationForm"
 import connectToDB from "@/utils/connectToDB"
 import Story from "@/models/story"
-import { authConfig } from "../api/auth/[...nextauth]/route"
+import { authConfig } from "../../api/auth/[...nextauth]/route"
 
 export interface StoryData {
   title: string
@@ -50,8 +50,8 @@ const onPostAction = async ({ title, openingSegment }: StoryData) => {
 
 export default async function StoryCreationPage() {
   return (
-    <main>
+    <section className="w-full h-full flex flex-col">
       <StoryCreationForm onPostAction={onPostAction} />
-    </main>
+    </section>
   )
 }

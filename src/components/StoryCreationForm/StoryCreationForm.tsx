@@ -3,8 +3,8 @@ import { useForm } from "react-hook-form"
 import { Form, FormField, FormItem, FormLabel, FormControl } from "../ui/form"
 import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
-import type { StoryData } from "@/app/create/page"
 import ImageUploadInput from "./ImageUploadInput"
+import { StoryData } from "@/app/(main-app)/begin-a-story/page"
 
 const StoryCreationForm = ({
   onPostAction

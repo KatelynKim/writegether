@@ -5,7 +5,7 @@ import { signOut } from "next-auth/react"
 
 const ProfileMenu = ({ imgSrc }: { imgSrc: string }) => {
   return (
-    <>
+    <div className="flex">
       {imgSrc ? (
         <div className="flex space-x-4">
           <Image
@@ -20,7 +20,7 @@ const ProfileMenu = ({ imgSrc }: { imgSrc: string }) => {
       ) : (
         <GoogleSignInButton />
       )}
-    </>
+    </div>
   )
 }
 
